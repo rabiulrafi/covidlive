@@ -1,0 +1,94 @@
+<br>
+<div class="row">
+	{% for item in geodata %}
+		{%if item.Country == 'Bangladesh' %}
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white mb-3" id="total-orders">
+				<div class="card-header">
+					<h5 class="card-title">New Confirmed</h5>
+			    </div>
+			    <div class="card-body">
+			    	<h3 class="card-title">{{item.NewConfirmed}}</h3>
+			    </div>
+			</div>	
+		</div>		
+   </div>
+
+   <div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white mb-3" id="orders-delivered">
+				<div class="card-header">
+					<h5 class="card-title">New Deaths</h5>
+			    </div>
+			    <div class="card-body">
+			    	<h3 class="card-title">{{item.NewDeaths}}</h3>
+			    </div>
+			</div>	
+		</div>		
+   </div>
+
+   <div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white mb-3" id="orders-pending">
+				<div class="card-header">
+					<h5 class="card-title">New Recovered</h5>
+			    </div>
+			    <div class="card-body">
+			    	<h3 class="card-title">{{item.NewRecovered}} </h3>
+			    </div>
+			</div>	
+		</div>		
+   </div>
+
+   		{%endif%}
+   {%endfor%}
+
+</div>
+
+<div class="row">
+	{% for item in geodata %}
+		{%if item.Country == 'Bangladesh' %}
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white mb-3" id="total-orders">
+				<div class="card-header">
+					<h5 class="card-title">Total Confirmed</h5>
+			    </div>
+			    <div class="card-body">
+			    	<h3 class="card-title">{{item.TotalConfirmed}}</h3>
+			    </div>
+			</div>	
+		</div>		
+   </div>
+
+   <div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white mb-3" id="orders-delivered">
+				<div class="card-header">
+					<h5 class="card-title">Total Deaths</h5>
+			    </div>
+			    <div class="card-body">
+			    	<h3 class="card-title">{{item.TotalDeaths}}</h3>
+			    </div>
+			</div>	
+		</div>		
+   </div>
+
+   <div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white mb-3" id="orders-pending">
+				<div class="card-header">
+					<h5 class="card-title">Total Recovered</h5>
+			    </div>
+			    <div class="card-body">
+			    	<h3 class="card-title">{{item.TotalRecovered}}</h3>
+			    </div>
+			</div>	
+		</div>		
+   </div>
+
+   		{%endif%}
+   {%endfor%}
+
+</div>
