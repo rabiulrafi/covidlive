@@ -1,0 +1,43 @@
+
+		
+		#logo{
+
+		}
+		body{
+			background-color: #ffffff;
+		}
+
+		#total-orders{
+			background-color: #ff9100;
+		}
+
+		#orders-delivered{
+			background-color: #7b00ff;
+
+		}
+
+		#pdd{
+			padding: : 20 dp;
+
+		}
+
+		#orders-pending{
+			background-color: #2f7a6a;
+		}
+		
+		.pagination-number{
+			background-color: #6D85C7;
+			padding:0.5em 0.8em;
+			color: #ffffff;
+			border-radius: 2px;
+		}
+		.img-circular{
+			 width: 200px;
+			 height: 200px;
+			 background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+			 background-size: cover;
+			 display: block;
+			 border-radius: 100px;
+			 -webkit-border-radius: 100px;
+			 -moz-border-radius: 100px;
+		}

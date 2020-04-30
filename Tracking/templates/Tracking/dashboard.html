@@ -11,28 +11,24 @@
 		<hr>
 		<h1>Global Info:</h1>
 		<hr>
-			<h3>Total Confirmed: {{global.TotalConfirmed}}</h3>			
+			<h3>Total Confirmed: {{global.cases}}</h3>			
 
-			<h3>Total Deaths: {{global.TotalDeaths}}</h3>			
+			<h3>Total Deaths: {{global.deaths}}</h3>			
 
-			<h3>Total Recovered: {{global.TotalRecovered}} </h3>			
+			<h3>Total Recovered   : {{global.recovered}} </h3>		
+			<h3>Active cases      : {{global.active}} </h3>			
+			<h3>Critical Cases    : {{global.critical}} </h3>	
+			<h3>Deaths Per Million: {{global.deathsPerOneMillion}} </h3>	
 
+			  
 		</div>
 		
 		<div class="col-6">
-			
-			{% for item in geodata %}
-				{%if item.Country == 'Bangladesh' %}
-					<hr>
-					<h1>Last Update: </h1>
-					<hr>
-					<h4>{{item.Date}}</h4>
+			<hr>
+			<h1>Last Update: </h1>
+			<hr>
 
-			
-			   	{%endif%}
-
-   			{%endfor%}
-
+			<h3>{% now "Y-m-d" %}</h3>
 		
 			
 		</div>

@@ -25,7 +25,7 @@ SECRET_KEY = '2%*x%h31$+7)40iz%cogc(1=%2ot7fi*5=@5w3#3w8zsg$yyey'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['covid-19bangladesh.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'CovidTracker.urls'
@@ -118,7 +119,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
 
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/images/'
 CRISPY_TEMPLATE_PACK = "bootstrap4"
